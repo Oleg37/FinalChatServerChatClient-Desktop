@@ -1,0 +1,52 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp scrollPane1::t:::x, seq l {comp btDeleteAll:::p::p, space :::p, comp btCloseConexions::::179:x, space :::p, comp btOpenConnexions:::p:213:p}, seq t {par t {comp jlTitleAdmin::l::555:x, comp jlHistory::::555:x}, space :::p, comp btReload:::p::p}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, par l {seq {comp jlTitleAdmin:::p:34:p, space :::p, comp jlHistory:::p:24:p}, comp btReload::::70:x}, space :::p, comp scrollPane1::::211:x, space :::p, par l {comp btDeleteAll::::38:x, comp btOpenConnexions::l::38:x, comp btCloseConexions::l::38:x}, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "Administrador"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jlTitleAdmin"
+				"text": "Bienvenido ADMINISTRADOR"
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "Segoe UI", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jlHistory"
+				"text": "Historial de mensajes - Presione el espacio, ¡para actualizar!"
+				"horizontalAlignment": 0
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "taHistory"
+					"editable": false
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btDeleteAll"
+				"text": "ELIMINAR MENSAJES -> INCLUIDO BD"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btCloseConexions"
+				"text": "CERRAR CONEXIONES"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btOpenConnexions"
+				"text": "ABRIR CONEXIONES"
+				"enabled": false
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btReload"
+				"text": "Recargar"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 5 )
+			"size": new java.awt.Dimension( 655, 375 )
+		} )
+	}
+}
