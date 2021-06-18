@@ -10,5 +10,5 @@ Proyecto de recuperación -> Número 5 (Java Desktop)
  - Podemos cerrar conexiones.
  - Y... más cosas por descubrir :).
 
-### *Esta práctia se realiza mediante Java Desktop.*
+### *Esta práctia se realiza mediante - Java Desktop.*
 
